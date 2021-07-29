@@ -1,0 +1,35 @@
+{% extends 'groupify/base.html' %} {% block content %}
+<section class="container-fluid text-center">
+    <h3>{{common_catagory}} groups</h3>
+    <hr>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+
+        {% for group in groups %}
+        <div class="card" style="width: 18rem; margin: 10px">
+            <img src="{{group.group_profile.url}}" style="height: 286px; width: 286px" alt="group-image" />
+            <div class="card-body">
+                <div class="card-title">
+                    <h4>{{ group.name }}</h4>
+                </div>
+                Category: {%for cat in group.category.all%}
+                <a href="{% url 'cat_list' cat.id %}"><b>{{cat}},</b></a>
+                {%endfor%}
+            </div>
+            <div class="card-footer">
+                <a href="{% url 'group_detail' group.id  %}">
+                    <div class="text-center">
+                        {% if group in user.profile.group.all %}
+                        <div class="col-md-3"><a href="{% url 'leave' group.id %}" class="btn btn-danger">Leave</a></div>
+                        {%else%}
+                        <div class="col-md-3"><a href="{% url 'join' group.id %}" class="btn btn-success">Join</a></div>
+                        {% endif %}
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+   
+</section>
+
+{% endblock content %}

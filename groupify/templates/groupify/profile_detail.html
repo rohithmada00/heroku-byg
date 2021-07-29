@@ -1,0 +1,38 @@
+{% extends 'groupify/base.html' %} {% load static %} {% load crispy_forms_tags %}
+{% block content %}
+<!--
+    <div class="content-section container">
+    <div class="media">
+        <img alt="" class="rounded-circle account-img" src="{{profile.user_profile.url}}" />
+        <div class="media-body">
+            <h2 class="account-heading">{{profile.user.username}}</h2>
+            <p class="text-secondary">{{profile.user.email}}</p>
+            <p class="text-secondary">{{profile.about}}</p>
+        </div>
+    </div>
+
+    </div>
+-->
+
+
+<div class="bg-white">
+    <div class="container">
+        <div class="text-center py-5">
+            <img src="{{profile.user_profile.url}}" alt="profile pic" height="250" width="250"
+                class="ui-w-100 rounded-circle">
+
+            <div class="col-md-8 col-lg-6 col-xl-5 p-0 mx-auto">
+                <h2 class="account-heading">{{profile.user.username}}</h2>
+
+                <div class="text-muted mb-4">
+                    <p class="text-secondary">{{profile.user.email}}</p>
+                    <p class="text-secondary">{{profile.about}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="m-0">
+
+</div>
+
+{% endblock content %}

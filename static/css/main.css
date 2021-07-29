@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet|Quicksand|Barlow");
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+main {
+    font-family: Barlow, Quicksand, Rubik, sans-serif, serif, 'Times New Roman', Times, serif !important;
+}
+
+.navbar {
+    background-color: #212529 !important;
+}
+
+.card {
+    box-shadow: 15px 15px 10px rgb(78, 77, 77);
+
+}
+
+.card-header:hover {
+    background: rgb(11, 22, 83) !important;
+    color: whitesmoke !important;
+    transition: 0.1s ease-in;
+}
+
+.card-header {
+    color: rgb(11, 22, 83) !important;
+    background: #17A2BB !important;
+    transition: 0.3s ease-in;
+
+}
+
+.nav-link:hover {
+    background: rgb(11, 22, 83) !important;
+    color: white !important;
+    transition: 0.7s ease;
+}
+
+
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.btn:hover {
+    background: rgb(11, 22, 83);
+    color: white;
+    border: 0.5px solid white;
+}
+
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+
+.main {
+    margin-left: 15%;
+}
+
+.fixed-bottom {
+    width: 100%;
+    background: #212529 !important;
+}
+
+#id_user_profile{
+    border: 1px solid #ced4da;
+    padding: 0.2em ;
+    margin-top: 6px;
+}
+
+
+.sidebar {
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: 10px;
+    background: #E9ECEF;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidebar ul li a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #2196F3;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    color: #212529;
+}
+
+

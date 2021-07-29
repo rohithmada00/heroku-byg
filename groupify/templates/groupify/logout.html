@@ -1,0 +1,9 @@
+{% extends 'groupify/base.html' %} {% load static %} 
+{% block content %}
+<div class="border-top pt-3 text-center">
+  <h2>Hey, It seems you are logged Out</h2>
+  <small class="text-muted"><a class="btn btn-success" href="{% url 'login' %}">Log In Again</a>
+  </small>
+</div>
+
+{% endblock content %}
